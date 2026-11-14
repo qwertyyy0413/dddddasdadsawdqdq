@@ -1,0 +1,27 @@
+\033[8;28;80t\033[2J\033[H\033[38;5;231m\r
+ Commands\x1b[38;5;160m:\r\r
+\033[38;5;231m  Attack Commands\x1b[38;5;160m:\r\r
+\033[38;5;231m  !methods   \x1b[38;5;160m:\033[38;5;231m show available attack methods\033[38;5;231m.\r\r
+\033[38;5;231m  !ongoing   \x1b[38;5;160m:\033[38;5;231m show all ongoing attacks\033[38;5;231m.\r\r
+\033[38;5;231m  !stopatk   \x1b[38;5;160m:\033[38;5;231m stop attack (!stopatk all | !stopatk <id>)\033[38;5;231m.\r\r
+\033[38;5;231m  !history   \x1b[38;5;160m:\033[38;5;231m show attack history\033[38;5;231m.\r\r
+\033[38;5;231m  !payloads  \x1b[38;5;160m:\033[38;5;231m show payload wget/curl lines (if enabled in config)\033[38;5;231m.\r\r
+\r\r
+\033[38;5;231m  Bot Commands\x1b[38;5;160m:\r\r
+\033[38;5;231m  !bots      \x1b[38;5;160m:\033[38;5;231m show bot count and architecture\033[38;5;231m.\r\r
+\r\r
+\033[38;5;231m  User Commands\x1b[38;5;160m:\r\r
+\033[38;5;231m  !user      \x1b[38;5;160m:\033[38;5;231m show your stats\033[38;5;231m.\r\r
+\033[38;5;231m  !plan      \x1b[38;5;160m:\033[38;5;231m show your plan and limits\033[38;5;231m.\r\r
+\033[38;5;231m  !passwd    \x1b[38;5;160m:\033[38;5;231m change your password\033[38;5;231m.\r\r
+\033[38;5;231m  !last      \x1b[38;5;160m:\033[38;5;231m show last login info\033[38;5;231m.\r\r
+\r\r
+\033[38;5;231m  System Commands\x1b[38;5;160m:\r\r
+\033[38;5;231m  !admin     \x1b[38;5;160m:\033[38;5;231m show admin commands (admin/root only)\033[38;5;231m.\r\r
+\033[38;5;231m  !uptime    \x1b[38;5;160m:\033[38;5;231m show server uptime\033[38;5;231m.\r\r
+\033[38;5;231m  !help      \x1b[38;5;160m:\033[38;5;231m show this help message\033[38;5;231m.\r\r
+\033[38;5;231m  !clear     \x1b[38;5;160m:\033[38;5;231m clear screen (same: clear, cls)\033[38;5;231m.\r\r
+\033[38;5;231m  !exit      \x1b[38;5;160m:\033[38;5;231m logout from CNC\r\r
+\r\r
+\033[38;5;231m  Admin/root only\x1b[38;5;160m:\033[38;5;231m !attack enable | !attack disable \x1b[38;5;160m(\033[38;5;231mglobal bot attack toggle\x1b[38;5;160m)\r\r
+\033[0m\r

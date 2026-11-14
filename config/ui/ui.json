@@ -1,0 +1,11 @@
+{
+    "home": "home.tfx",
+    "help": "help.tfx",
+    "methods": "methods.tfx",
+    "attacksent": "attacksent.tfx",
+    "stats": "stats.tfx",
+    "ongoing_header": "ongoing.tfx",
+    "admin": "admin.tfx",
+    "plan": "plan.tfx",
+    "prompt": "prompt.tfx"
+}

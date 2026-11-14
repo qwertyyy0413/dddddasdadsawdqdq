@@ -1,0 +1,19 @@
+[Unit]
+Description=Byte CNC server
+After=network.target mysql.service mariadb.service
+
+[Service]
+Type=simple
+WorkingDirectory=%h
+ExecStart=%h/server
+EnvironmentFile=-%h/.env.cnc
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+# Hardening (adjust if the binary needs more caps, e.g. nftables)
+# NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
